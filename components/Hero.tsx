@@ -3,7 +3,40 @@
 import Image from 'next/image';
 import NavLink from './NavLink';
 
-let heroImages = ['/1.png', '/3.png', '/mari.png', '/6.png', '/king.png', '/4.png'];
+let heroImages = ['/leoinput.png', '/kingstoninput.png', '/kingcool.png', '/6.png', '/king.png', '/4.png', '/a.jpg', '/b.jpg', '/c.jpg', '/d.jpg', '/i.jpg', '/h.jpg', '/g.jpg', '/f.jpg', '/n.jpg', '/e.jpg', '/m.jpg', '/k.jpg', '/j.jpg', '/l.jpg'];
+
+
+export function Kingvid() {
+  return (
+    <video width="240" height="240" controls preload="none" autoPlay muted loop>
+      <source src="/kingvid.mp4" type="video/mp4" />
+      <track srcLang="en" label="English" />
+      Your browser does not support the video tag.
+    </video>
+  );
+}
+
+export function Kingvid2() {
+  return (
+    <video width="320" height="240" controls preload="none" autoPlay muted loop>
+      <source src="/kingvid2.mp4" type="video/mp4" />
+      <track srcLang="en" label="English" />
+      Your browser does not support the video tag.
+    </video>
+  );
+}
+
+export function Leovid() {
+  return (
+    <video width="320" height="240" controls preload="none" autoPlay muted loop>
+      <source src="/leovid.mp4" type="video/mp4" />
+      <track srcLang="en" label="English" />
+      Your browser does not support the video tag.
+    </video>
+  );
+}
+
+
 
 export default function Hero() {
   return (
@@ -33,7 +66,12 @@ export default function Hero() {
               Learn more
             </NavLink>
           </div>
-          <div className="grid sm:grid-cols-3 grid-cols-2 gap-4 pt-10">
+
+          <div className="grid sm:grid-cols-4 grid-cols-1 gap-2 pt-10">
+
+            <Kingvid2 />
+
+            <Leovid />
             {heroImages.map((image, idx) => (
               <Image
                 key={idx}
@@ -44,6 +82,7 @@ export default function Hero() {
                 className="rounded-lg"
               />
             ))}
+
           </div>
         </div>
       </div>
