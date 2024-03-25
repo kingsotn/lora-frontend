@@ -28,7 +28,7 @@ export async function generateMetadata({
 
   const title = `InstaLoRA: ${data.prompt}`;
   const description = `A InstaLoRA generated from InstaLoRA linking to: ${data.website_url}`;
-  const image = data.image || 'https://qrGPT.io/og-image.png';
+  const image = data.image || 'public/website.png';
 
   return {
     title,
