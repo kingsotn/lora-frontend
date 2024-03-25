@@ -11,8 +11,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 let title = 'InstaLoRA - Instant LoRA Generator';
 let description = 'Generate your LoRA in seconds';
-let url = 'https://www.qrgpt.io';
-let ogimage = 'https://www.qrgpt.io/og-image.png';
+let url = 'https://www.instalora.xyz';
+let ogimage = 'public/website.png';
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),

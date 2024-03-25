@@ -6,16 +6,6 @@ import NavLink from './NavLink';
 let heroImages = ['/leoinput.png', '/kingstoninput.png', '/kingcool.png', '/6.png', '/king.png', '/4.png', '/a.jpg', '/b.jpg', '/c.jpg', '/d.jpg', '/i.jpg', '/h.jpg', '/g.jpg', '/f.jpg', '/n.jpg', '/e.jpg', '/m.jpg', '/k.jpg', '/j.jpg', '/l.jpg'];
 
 
-export function Kingvid() {
-  return (
-    <video width="240" height="240" controls preload="none" autoPlay muted loop>
-      <source src="/kingvid.mp4" type="video/mp4" />
-      <track srcLang="en" label="English" />
-      Your browser does not support the video tag.
-    </video>
-  );
-}
-
 export function Kingvid2() {
   return (
     <video width="320" height="240" controls preload="none" autoPlay muted loop>
